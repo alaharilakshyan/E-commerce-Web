@@ -4,7 +4,7 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(255, 255, 255));
     overflow: hidden;
-    font-fmaily: 'poppins';
+    font-family: 'poppins';
 }
 
 #up{
@@ -18,7 +18,7 @@ body{
 }
 
 #down{
-    positon: absolute;
+    position: absolute;
     right: 0;
     height: 500px;
     width: 500px;
@@ -59,13 +59,17 @@ nav{
     font-size: 18px;
 }
 
-.nav ul li a{
+.nav-list li a{
     text-decoration: none;
     color: #424242;
     padding: 22px 0;
     display: inline-block;
     transition: all ease 0.3s;
     font-size: 18px;
+}
+
+.nav-list li a:hover{
+    color: #fc8d3e;
 }
 
 .nav-list button{
