@@ -103,3 +103,21 @@ nav{
         bottom: 700px;
     }
 }
+
+/* Sub menu style */
+nav ul .submenu{
+    position: absolute;
+    width: 200px;
+    background-color:white;
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+
+nav ul li:hover .submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
