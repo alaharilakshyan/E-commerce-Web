@@ -121,3 +121,13 @@ nav ul li:hover .submenu{
     opacity: 1;
     margin-top: 0;
 }
+nav ul .submenu li{
+    margin: 0;
+    width: 100%;
+}
+
+nav ul .submenu li a{
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
