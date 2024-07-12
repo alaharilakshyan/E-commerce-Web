@@ -109,7 +109,7 @@ nav{
 /* Sub menu style */
 
 
-nav form input,.submenu{
+nav form input{
     display: flex;
     align-items: center;
     width: 20rem;
