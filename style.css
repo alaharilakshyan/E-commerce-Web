@@ -10,16 +10,32 @@ body{
     overflow: hidden;
     justify-content: center;
     font-family: 'poppins';
+    overflow-x: auto; 
+    overflow-y: auto;
 }
 
 /*adding slider*/
 
-.slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
+.slider {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+  }
+
+
+.slider {
+    margin: 0 20px; 
+    max-width: 800px;
+    transition: 2s; 
+  }
+  
+  .slides {
+    display: flex;
+    justify-content: center; 
+  }
+
 
 .slides{
     width: 500%;
@@ -40,6 +56,8 @@ body{
     width: 800px;
     height: 500px;
 }
+
+
 
 /*Creating the sliding transition*/
 
@@ -85,6 +103,49 @@ justify-content: center;
 #radio4:checked ~ .first{
     margin-left: -60%;
 }
+
+.navigatio-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigatio-auto div{
+    border: 2px solid #EA0D0D;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #EA0D0D;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #EA0D0D;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #EA0D0D;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #EA0D0D;
+}
+
+
+
+
+
+
+
+
 
 
 
