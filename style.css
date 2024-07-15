@@ -5,10 +5,89 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    align-items: center;
     background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(255, 255, 255));
     overflow: hidden;
+    justify-content: center;
     font-family: 'poppins';
 }
+
+/*adding slider*/
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+/*Creating the sliding transition*/
+
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+
+.maual-btn{
+    border: 2px solid #EA0D0D;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #EA0D0D;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
 
 *{
     margin:0px;
@@ -192,43 +271,4 @@ nav ul .submenu li a{
     color: #fc8d3e;
 }
 
-/*adding slider*/
 
-.container{
-    position: relative;
-}
-
-.container .wrapper{
-    width: 90vw;
-    height: 75vh;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6) ;
-    margin: .5rem auto; 
-    overflow: hidden;
-}
-
-.container .wrapper.holder{
-    display: flex;
-    grid-template-columns: repeat(4, 100%);
-    height: 100%;
-    width: 100%;
-}
-
-.container #slider-img-1{
-    background-image: url(images/polos.jpg);
-    background-position: center;
-}
-
-.container #slider-img-1{
-    background-image: url(images/Home/ladies\ dress\ offers.jpg);
-    background-position: center;
-}
-
-.container #slider-img-1{
-    background-image: url(images/Home/ladies\ dress\ offers.jpg);
-    background-position: center;
-}
-
-.container #slider-img-1{
-    background-image: url(images/Home/ladies\ dress\ offers.jpg);
-    background-position: center;
-}
