@@ -12,6 +12,7 @@ body {
     min-height: 200vh;
 }
 
+/* Banner */
 .banner {
     position: fixed;
     top: 0;
