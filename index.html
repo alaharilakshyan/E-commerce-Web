@@ -8,100 +8,24 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-    <nav>
-        
-        <div class="logo"><h1>Lirpa</h1></div>
-
-        <div class="search-bar">
-            <input type="text" placeholder="Search... ">
-            <i class="fa fa-search"></i>
-        </div>
-
-        <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Featured</a>
-                <ul class="submenu">
-                    <li><a href="#">New Deals</a></li>
-                    <li><a href="#">Best Offers</a></li>
-                    <li><a href="#">Discounts</a></li>
-                    <li><a href="#">Deals of the Day</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Categories</a>
-                <ul class="submenu">
-                    <li><a href="#">Cloths</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Electronics</a></li>
-                    <li><a href="#">Furniture</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Others</a></li>
-                </ul>
-            </li> 
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i>
-            <i class="fa-solid fa-user"></i>
-            <button>Sign-in/Login Now</button>
-        </ul>
-    </nav>
-
-    <section id="up"></section>
-    <section id="down"></section>
-    <section id="left"></section>
-    <section id="right"></section>
-</head>
-
-<body>
-    <div style="overflow: auto; width: 800px; height: 500px;">
-        <!-- your content here -->
-     
-<div class="slider">
-    <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <div class="slide first">
-            <img src="img/men dress.jpg" alt="">
-        </div>
-        <div class="slide">
-            <img src="img/Mobileaccessories.jpg" alt="">
-        </div>
-        <div class="slide">
-            <img src="img/womenaccessories.jpg" alt="">
-        </div>
-        <div class="slide">
-            <img src="img/newcollectioon.jpg" alt="">
-        </div>
-
-        <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-        </div>
-
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-
-    </div>
-</div>
-</div>
+<header>
+    <a href="#" class="logo">Lirpa</a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">featured</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Login-in / Sign-in</a></li>
+    </ul>>
+</header>
+<section class="banner"></section>
 <script type="text/javascript">
-var counter = 1;
-setInterval(function(){
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if(counter > 4){
-        counter =1;
-    }
-},5000);
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classlist.toggle("sticky", window.scrolly > 0);
+    })
 </script>
-
 </body>
 </html>
