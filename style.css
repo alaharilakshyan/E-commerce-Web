@@ -24,10 +24,10 @@ header{
     padding: 40px 100px;
     z-index: 100000;
 }
-
-header :hover{
-    color: #a2a2a2a2
-}
+/*
+header:hover{
+    background: white;
+} */
 
 header.sticky{
     padding: 5px 100px;
@@ -79,48 +79,19 @@ header.sticky ul li a{
     color: #000;
 }
 
-.container {
-    display: flex;
-    font-size: 14px;
-    height: 100vh;
-    background: #000000;
+header :hover{
+    color: #656363cb ;
 }
 
-.navbar{
-margin: auto;
-padding: 0.5rem 1.5 rem;
-background: #fff;
-border-radius: 1rem;
-box-shadow: 0 4px 12px rgba(0, 0, 0,0.1);
-}
 
-.nav-link{
-    display: flex;
-    gap: 2rem;
-}
 
-.nav-link, .drop-down li{
-    list-style: none;
-    height: 100%;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    cursor: pointer;
-}
 
-a{
-    text-decoration: none;
-    color: currentColor;
-}
 
-.drop-down{
-    position: absolute;
-    padding: 0.5rem 0;
-    margin: 0.5rem -0.5rem;
-    color: grey;
-    box-shadow: 0 4px 12px rgba(0, 0, 0,0.1);
-    border-radius: 0.5rem;
-    font-size: 12px;
-}
+
+
+
+
+
 
 
 
