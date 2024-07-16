@@ -1,5 +1,7 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +10,12 @@
 }
 
 body {
+    /* Body Styles */
     background: rgb(0, 0, 0);
     min-height: 200vh;
 }
 
-/* Banner */
+/* Banner Styles */
 .banner {
     position: fixed;
     top: 0;
@@ -23,6 +26,7 @@ body {
     z-index: -1;
 }
 
+/* Header Styles */
 header {
     position: fixed;
     top: 0;
@@ -37,6 +41,7 @@ header {
     z-index: 1000; /* Adjusted z-index */
 }
 
+/* Sticky Header Styles */
 header.sticky {
     padding: 10px 100px; /* Adjusted padding for sticky header */
     background: rgba(255, 255, 255, 0.5);
@@ -44,6 +49,7 @@ header.sticky {
     backdrop-filter: blur(10px);  /* Used for creating a blur effect */
 }
 
+/* Logo Styles */
 header .logo {
     font-weight: 700;
     color: #fff;
@@ -54,23 +60,39 @@ header .logo {
     transition: 0.6s;
 }
 
+/* Header Navigation Styles */
 header ul {
     display: flex;
     align-items: center;
 }
 
+/* Header Navigation Items Styles - Meaning all of the items in the header */
 header ul li {
     position: relative;
     list-style: none;
 }
 
+/* Header Navigation Item Styles - Meaning all of the items in the header */
+header ul li:hover ul {
+    display: block;
+}
+
+/* Header Navigation Item Styles - Same as above, but the Hyperlink part of each of them */
 header ul li a {
     text-decoration: none;
     color: #fff;
     padding: 10px 15px; /* Adjusted padding for menu items */
-    transition: 0.6s;
+    transition: 0.2s;
 }
 
+/* Hover Effect for Header Navigation Items */
+header ul li a:hover {
+    background: #7e7e7e;
+    border-radius: 20px;
+    color: #fff;
+}
+
+/* Dropdown Menu Styles */
 header ul ul {
     position: absolute;
     top: 150%;
@@ -83,10 +105,12 @@ header ul ul {
     width: 100%;
 }
 
+/* Dropdown Items Styles - Meaning all of titems in the dropdown */
 header ul ul li {
     text-align: center;
 }
 
+/* Dropdown Item Styles - Same as above, but the Hyperlink part of each of them */
 header ul ul li a {
     display: block;
     padding: 10px 0; /* Adjusted padding for dropdown items */
@@ -94,11 +118,15 @@ header ul ul li a {
     transition: 0.3s;
 }
 
+/* Hover Effect for Dropdown Items */
 header ul ul li a:hover {
-    background: #fff;
+    background: #7e7e7e;
+    border-radius: 20px;
     color: #000;
 }
 
+/* Dropdown Display on Hover */
 header ul li:hover > ul {
     display: block;
 }
+
