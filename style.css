@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
 
-body{
+body {
     background: rgb(0, 0, 0);
     min-height: 200vh;
 }
 
-header{
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    z-index: -1;
+}
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,81 +31,73 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 40px 100px;
-    z-index: 100000;
-}
-/*
-header:hover{
-    background: white;
-} */
-
-header.sticky{
-    padding: 5px 100px;
-    background: #fff;
+    padding: 20px 100px; /* Adjusted padding for the header */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Adjusted z-index */
 }
 
-header .logo{
-    position: relative;
+header.sticky {
+    padding: 10px 100px; /* Adjusted padding for sticky header */
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect, looks cool */
+    backdrop-filter: blur(10px);  /* Used for creating a blur effect */
+}
+
+header .logo {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
     font-size: 2rem;
     text-transform: uppercase;
-   letter-spacing: 2px;
+    letter-spacing: 2px;
     transition: 0.6s;
 }
 
-header ul{
-    position: relative;
+header ul {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-header ul li{
+header ul li {
     position: relative;
     list-style: none;
 }
 
-header ul li a{
-    position: relative;
-    margin: 0 15px;
+header ul li a {
     text-decoration: none;
     color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500px;
+    padding: 10px 15px; /* Adjusted padding for menu items */
     transition: 0.6s;
 }
 
-.banner{
-    position: relative;
+header ul ul {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background: #000;
+    display: none;
+    padding: 10px 0;
+    z-index: 1000;
+    border-top: 2px solid #7e7e7e; /* Optional: border for dropdown */
     width: 100%;
-    height: 100vh;
-    background: url(img/black.jpg);
-    background-size: cover;
 }
-header.sticky .logo,
-header.sticky ul li a{
+
+header ul ul li {
+    text-align: center;
+}
+
+header ul ul li a {
+    display: block;
+    padding: 10px 0; /* Adjusted padding for dropdown items */
+    color: #fff;
+    transition: 0.3s;
+}
+
+header ul ul li a:hover {
+    background: #fff;
     color: #000;
 }
 
-header :hover{
-    color: #656363cb ;
+header ul li:hover > ul {
+    display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
