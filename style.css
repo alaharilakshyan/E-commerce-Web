@@ -17,7 +17,7 @@ body {
 
 /* Banner Styles */
 .banner {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,8 +25,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background-image: url(img/bg.jpg);
-    background-origin: content-box;
+    background:#000000;
     z-index: -1;
     padding-bottom: 100%;
 }
@@ -49,7 +48,7 @@ header {
 /* Sticky Header Styles */
 header.sticky {
     padding: 10px 100px; /* Adjusted padding for sticky header */
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect, looks cool */
     backdrop-filter: blur(10px);  /* Used for creating a blur effect */
 }
@@ -92,7 +91,7 @@ header ul li a {
 
 /* Hover Effect for Header Navigation Items */
 header ul li a:hover {
-    background: #7e7e7e;
+    background: #9f9e9ecc;
     border-radius: 20px;
     color: #fff;
 }
@@ -139,4 +138,52 @@ header ul ul li a:hover {
 header ul li:hover > ul {
     display: block;
 }
+
+.carousel-item {
+    height: 32rem;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    position: relative;
+    
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; 
+    background-position: center;
+    background-size: flex;
+    opacity:0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
