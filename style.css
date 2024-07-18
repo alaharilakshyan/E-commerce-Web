@@ -222,9 +222,24 @@ header ul li:hover > ul {
     padding-top: 30px;
 }
 
+.image{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
 
+.image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border-color: #fff;
+    align-items: last baseline;
+}
 
-
-
-
+.image:hover{
+    transform: translateY(-30px);
+}
 
