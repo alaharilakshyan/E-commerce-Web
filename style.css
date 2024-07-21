@@ -3,10 +3,10 @@
 
 /* Global Styles */
 * {
+    /* Resetting default margin, padding, and box-sizing */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -19,6 +19,7 @@ body {
 
 /* Banner Styles */
 .banner {
+    /* Full-screen background image */
     position: absolute;
     top: 0;
     left: 0;
@@ -27,13 +28,14 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background:#000000;
+    background: #000000;
     z-index: -1;
     padding-bottom: 100%;
 }
 
 /* Header Styles */
 header {
+    /* Main header container */
     position: absolute;
     top: 0;
     left: 0;
@@ -49,6 +51,7 @@ header {
 
 /* Sticky Header Styles */
 header.sticky {
+    /* Sticky header styles */
     padding: 10px 100px; /* Adjusted padding for sticky header */
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect, looks cool */
@@ -57,6 +60,7 @@ header.sticky {
 
 /* Logo Styles */
 header .logo {
+    /* Brand logo styles */
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -68,23 +72,27 @@ header .logo {
 
 /* Header Navigation Styles */
 header ul {
+    /* Main navigation container */
     display: flex;
     align-items: center;
 }
 
-/* Header Navigation Items Styles - Meaning all of the items in the header */
+/* Header Navigation Items Styles */
 header ul li {
+    /* Main navigation item styles */
     position: relative;
     list-style: none;
 }
 
-/* Header Navigation Item Styles - Meaning all of the items in the header */
+/* Header Navigation Item Styles */
 header ul li:hover ul {
+    /* Sub-menu display on hover */
     display: block;
 }
 
-/* Header Navigation Item Styles - Same as above, but the Hyperlink part of each of them */
+/* Header Navigation Item Link Styles */
 header ul li a {
+    /* Main navigation link styles */
     text-decoration: none;
     color: #fff;
     padding: 10px 15px; /* Adjusted padding for menu items */
@@ -93,6 +101,7 @@ header ul li a {
 
 /* Hover Effect for Header Navigation Items */
 header ul li a:hover {
+    /* Hover effect for main navigation items */
     background: #9f9e9ecc;
     border-radius: 20px;
     color: #fff;
@@ -100,11 +109,13 @@ header ul li a:hover {
 
 header.sticky .logo,
 header.sticky ul li a {
+    /* Styles for logo and navigation links when header is sticky */
     color: #000;
 }
 
 /* Dropdown Menu Styles */
 header ul ul {
+    /* Dropdown menu container */
     position: absolute;
     top: 150%;
     left: 0;
@@ -116,13 +127,15 @@ header ul ul {
     width: 100%;
 }
 
-/* Dropdown Items Styles - Meaning all of titems in the dropdown */
+/* Dropdown Items Styles */
 header ul ul li {
+    /* Dropdown menu item styles */
     text-align: center;
 }
 
-/* Dropdown Item Styles - Same as above, but the Hyperlink part of each of them */
+/* Dropdown Item Styles */
 header ul ul li a {
+    /* Dropdown menu item link styles */
     display: block;
     padding: 10px 0; /* Adjusted padding for dropdown items */
     color: #fff;
@@ -131,26 +144,28 @@ header ul ul li a {
 
 /* Hover Effect for Dropdown Items */
 header ul ul li a:hover {
+    /* Hover effect for dropdown items */
     background: #7e7e7e;
     border-radius: 20px;
     color: #000;
 }
 
-/* Dropdown Display on Hover */
+/* Display Dropdown on Hover */
 header ul li:hover > ul {
+    /* Display dropdown on parent item hover */
     display: block;
 }
 
 .carousel-item {
+    /* Carousel item styles */
     height: 32rem;
     background-color: rgb(158, 158, 158);
     color: rgb(0, 0, 0);
     position: relative;
-    
 }
 
-.container{
-    position: absolute;
+.container {
+    /* Main container styles */
     bottom: 0;
     left: 0;
     right: 0;
@@ -158,25 +173,28 @@ header ul li:hover > ul {
 }
 
 .overlay-image {
+    /* Overlay image styles */
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0; 
+    top: 0;
     background-position: center;
     background-size: relative;
-    opacity:0.6;
+    opacity: 0.6;
 }
 
-/* card container */
+/* Card Container Styles */
 .card-container {
+    /* Container for cards */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
 }
 
-.card{
+.card {
+    /* Individual card styles */
     width: 325px;
     background-color: #000000;
     border-radius: 8px;
@@ -186,40 +204,49 @@ header ul li:hover > ul {
     transition: transform 0.6s ease;
 }
 
-.card:hover{
+.card:hover {
+    /* Hover effect for card */
     transform: translateY(-30px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card img{
+.card img {
+    /* Image inside card */
     width: 100%;
-    height: 400px;;
+    height: 400px;
 }
 
-.card-content{
+.card-content {
+    /* Content inside card */
     padding: 10px;
     color: #fff;
 }
 
-.card-content h2{
+.card-content h2 {
+    /* Heading inside card */
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.card-content P{
+.card-content p {
+    /* Text content inside card */
     font-size: 15px;
     line-height: 1.3;
 }
 
-.card-container a{
-    padding: 10px; 
+.card-container a {
+    /* Action button inside card container */
+    padding: 10px;
     background-color: #fff;
 }
 
-.card-container :hover a{
+.card-container :hover a {
+    /* Hover effect for action button */
     background-color: #adadadbd;
 }
 
-.card-content .btn{
+.card-content .btn {
+    /* Button inside card content */
     display: inline-block;
     padding: 8px 16px;
     background-color: #ffffff;
@@ -228,97 +255,63 @@ header ul li:hover > ul {
     margin-top: 16px;
 }
 
-/* Footer Css */
-.container{
-    max-width: 1170px;
-    margin: auto;
-}
-ul{
-    list-style: none;
-}
-.row{
-    display: flex;
-    flex-wrap:wrap;
-}
-.footer{
-    background-color: #24262b;
-    padding: 70px 0;
-}
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
+footer {
+    /* Footer styles */
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
 }
 
-.footer-col h4{
-    font-size: 18px;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
+footer h5 {
+    /* Heading in footer */
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-.footer-col h4::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
+footer ul {
+    /* Unordered list in footer */
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.footer-col ul li:not(:last-child){
+footer ul li {
+    /* List items in footer */
     margin-bottom: 10px;
-
 }
 
-.footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
+.social-icons {
+    /* Social icons container */
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-icons li {
+    /* Individual social icon styles */
+    margin-right: 10px;
+}
+
+.social-icons a {
+    /* Social icon link styles */
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    /* Hover effect for social icons */
+    color: #aaa;
+}
+
+.footer-links li a {
+    /* Link in footer */
+    color: #fff;
     text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-    transition: all 0.3s ease;
 }
 
-.footer-colul li a:hover{
-    color: #ffffff;
-    padding-left: 10px;
+.footer-links li a:hover {
+    /* Hover effect for links in footer */
+    color: #aaa;
+    text-decoration: underline;
 }
-
-.footer-col .social-links{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgb(255, 255, 255,0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
-}
-
-.footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
-}
-
-/* rsponsive */
-@media(max-width: 767px){
-   .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-   } 
-}
-
-@media(max-width: 574px){
-    .footer-col{
-     width: 100%;
-    } 
- }
- 
