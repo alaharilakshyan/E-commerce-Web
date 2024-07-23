@@ -46,7 +46,7 @@ body{
     color: #333;
 }
 
-.form .input-box input{
+.form :where( .input-box input, .select-box){
     position: 100px;
     height: 50px;
     width: 100%;
@@ -63,26 +63,73 @@ body{
     column-gap: 50px;
 }
 
+.form .gender-box{
+    margin-top: 20px;
+}
+
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
 .form :where(.gender-option, .gender){
     display: flex;
     align-items: center;
     column-gap: 100px;
+    flex-wrap: wrap;
 }
 
 .form .gender{
     column-gap: 10px;
     cursor: pointer;
 }
-
+.gender input{
+    accent-color: #ff6f00c6 ;
+}
 .form :where(.gender input, .gender label){
     cursor: pointer;
 
 }
 
+.gender label{
+    color: #707070;
+}
+.address :where(input, .select-box){
+    margin-top: 15px;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form button{
+    height: 55px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    margin-top:30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition:  all 0.2s ease;
+    background-color: #ff6f00c6;
+}
+.form button:hover{
+    background-color: #dba276;
+}
 /*Responsive*/
 @media screen and (max-width: 500px){
     .form .column{
         flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender){
+        row-gap: 15px;
     }
 }
 
