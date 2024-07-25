@@ -3,6 +3,7 @@
 
 /* Global Styles */
 * {
+   
     /* Resetting default margin, padding, and box-sizing */
     margin: 0;
     padding: 0;
@@ -167,6 +168,7 @@ header ul li:hover > ul {
 .container {
     /* Main container styles */
     bottom: 0;
+    column-count: 2;
     left: 0;
     right: 0;
     padding-bottom: 50px;
@@ -190,7 +192,7 @@ header ul li:hover > ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .card {
@@ -199,8 +201,8 @@ header ul li:hover > ul {
     background-color: #000000;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.2);
-    margin: 20px;
+    box-shadow: 0px 2px rgba(110, 106, 106, 0.2) 0.2;
+    margin: 10px;
     transition: transform 0.6s ease;
 }
 
@@ -218,68 +220,96 @@ header ul li:hover > ul {
 
 .card-content {
     /* Content inside card */
-    padding: 10px;
+    padding: 30px;
     color: #fff;
 }
 
 .card-content h2 {
     /* Heading inside card */
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .card-content p {
     /* Text content inside card */
-    font-size: 15px;
-    line-height: 1.3;
+    font-size: 10px;
+    line-height: 1.8;
 }
 
 .card-container a {
     /* Action button inside card container */
-    padding: 10px;
+    padding: 15px;
     background-color: #fff;
 }
 
 .card-container :hover a {
     /* Hover effect for action button */
-    background-color: #adadadbd;
+    background-color: #ffbd86fd;
 }
 
 .card-content .btn {
     /* Button inside card content */
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 8px;
+    padding-top: 10px;
     background-color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
-    margin-top: 16px;
+    margin-top: 20px;
 }
-
-footer {
-    /* Footer styles */
-    background-color: #333;
-    color: #fff;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #000;
     padding: 50px 0;
+    align-items: center;
+    border-bottom: 2px;
 }
-
-footer h5 {
-    /* Heading in footer */
+.footer-col{
+    width: 50%;
+    padding: 0 5px;
+}
+.footer-col h5{
+    font-size: 30px;
     color: #fff;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    text-transform: capitalize;
+    padding: 3px;
+    
+    align-items: center;
+    margin-bottom: 35px;
+    font-weight: 300;
+    position: relative;
 }
-
-footer ul {
-    /* Unordered list in footer */
-    list-style-type: none;
-    padding-left: 0;
+.footer-col h5::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fa7b20;
+    box-sizing: border-box;
+    width: 53px;
 }
-
-footer ul li {
-    /* List items in footer */
-    margin-bottom: 10px;
+.footer-col ul li:not(:last-child){
+    margin-bottom: 2px;
 }
-
+.footer-col ul li a{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    color: #adadadbd;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #fa7b20;
+}
 .social-icons {
     /* Social icons container */
     display: flex;
@@ -301,7 +331,7 @@ footer ul li {
 
 .social-icons a:hover {
     /* Hover effect for social icons */
-    color: #aaa;
+    color: #fa7b20;
 }
 
 .footer-links li a {
