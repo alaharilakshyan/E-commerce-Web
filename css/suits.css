@@ -41,6 +41,7 @@ header{
     width: 100%;
     background: var(--bg-color);
     box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
 }
 
 .nav{
@@ -61,6 +62,22 @@ header{
     cursor: pointer;
 }
 
+.cart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #eee1;
+    box-shadow: -2px 0 4px hsl(0, 0%, 0%);
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
 .section-title{
     font-size: 1.5rem;
     font-weight: 600;
@@ -88,13 +105,34 @@ header{
     transition: 0.4s;
 }
 
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 500;
+}
 
+.add-cart{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
 
-
-
-
-
-
+.add-cart:hover{
+    background: hsl(249, 32%, 17%);
+}
 
 
 
