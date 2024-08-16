@@ -16,7 +16,7 @@
 :root{
     --main-color: #fd4646;
     --text-color: #171427;
-    --bg-bolor: #fff;
+    --bg-color: #fff;
 }
 
 img{
@@ -42,7 +42,7 @@ header{
     left: 0;
     width: 100%;
     background: var(--bg-color);
-    box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.852);
+    box-shadow: 0 1px 4px hsl(0, 4%, 15%, 0.852);
     z-index: 100;
 }
 
@@ -84,7 +84,56 @@ header{
     transform: translateX(0); /* Show the cart when active */
 }
 
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
 
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
 .section-title{
     font-size: 1.5rem;
     font-weight: 600;
@@ -117,6 +166,7 @@ header{
 
 .price{
     font-weight: 500;
+    margin-right: 50%;
 }
 .add-cart{
     position: relative;
