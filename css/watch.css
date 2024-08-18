@@ -1,0 +1,183 @@
+/* Suits.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+section{
+    padding: 4rem 0 3rem;
+}
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0, 4%, 15%, 0.852);
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: rgb(161, 161, 161); /* Set the background color */
+    color: rgb(0, 0, 0); /* Set the icon color to make it visible */
+    border-radius: 50%; /* Make it round */
+    padding: 0.5rem; /* Add some padding to make the background visible */
+}
+
+.cart {
+    position: fixed; /* Make it fixed so it stays in place */
+    right: 0; /* Align it to the right */
+    top: 60px; /* Position it below the header */
+    width: 300px; /* Set a width for the cart */
+    min-height: 100vh;
+    box-shadow: -2px 0  4px hsl(0, 4%, 15%/ 10%); /* Add a subtle shadow */
+    padding-right: 20px;
+    transform: translateX(100%); /* Initially hide the cart */
+    transition: transform 0.3s ease; /* Smooth transition for showing/hiding */
+}
+
+#cart-icon.active + .cart {
+    transform: translateX(0); /* Show the cart when active */
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.shop{
+    margin-top: 2rem;
+}
+
+/* shop content */
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.product-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing */
+}
+
+.price{
+    font-weight: 500;
+    margin-right: 50%;
+}
+.add-cart{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;  
+}
+
+.add-cart:hover{
+    background: hsla(249, 32%, 17%);
+}
